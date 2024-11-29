@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Times New Roman', Times, serif;
+  background: url(https://img.freepik.com/premium-vector/seamless-pattern-kawaii-cute-cats-sky-cartoon-animals-background-vector-illustration_107335-245.jpg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: #E5D9F2;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 21, 0.9);
+  width: 350px;
+  text-align: center;
+}
+
+h2 {
+  color: #333;
+}
+
+.balance-container {
+  margin: 20px 0;
+}
+
+.income-expense-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.income-expense-container div {
+  width: 45%;
+}
+
+.money {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.money.plus {
+  color: green;
+}
+
+.money.minus {
+  color: red;
+}
+
+.form-control {
+  margin-bottom: 10px;
+}
+
+form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.btn:hover {
+  background-color: #218838;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+#list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-height: 100px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#list::-webkit-scrollbar {
+  width: 8px;
+}
+
+#list::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 10px;
+}
+
+#list::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+.list li {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f4f4f4;
+  margin: 10px 0;
+  padding: 10px;
+  border-right: 5px solid;
+}
+
+.list .minus {
+  border-color: red;
+}
+
+.list .plus {
+  border-color: green;
+}
+
+.delete-btn {
+  color: #ff0000;
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-size: 1rem;
+}
